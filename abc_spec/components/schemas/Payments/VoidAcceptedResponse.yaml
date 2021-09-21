@@ -22,6 +22,6 @@ properties:
         allOf:
           - $ref: '#/components/schemas/Link'
         example:
-          href: 'https://api.checkout.com/payments/pay_y3oqhf46pyzuxjbcn2giaqnb44'
+          href: 'https://api.checkout.com/payments/<PAYMENT_ID>'
     required:
       - payment

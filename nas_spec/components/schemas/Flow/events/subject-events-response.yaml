@@ -20,15 +20,15 @@ properties:
         _links:
           $ref: '#/components/schemas/event-links'
     example:
-      - id: evt_zrrgsvsr47ou7fng4shy4mtf64
+      - id: <EVENT_ID>
         type: payment_approved
         timestamp: '2019-05-23T08:25:53Z'
         _links:
           self:
-            href: https://api.checkout.com/events/evt_zrrgsvsr47ou7fng4shy4mtf64
-      - id: evt_wgwdfyem4ode5furs5swyy6b2u
+            href: https://api.checkout.com/events/<EVENT_ID>
+      - id: <EVENT_ID>
         type: payment_captured
         timestamp: '2019-05-24T07:00:53Z'
         _links:
           self:
-            href: https://api.checkout.com/events/evt_zrrgsvsr47ou7fng4shy4mtf64
+            href: https://api.checkout.com/events/<EVENT_ID>

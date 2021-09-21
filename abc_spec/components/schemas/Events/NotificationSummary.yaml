@@ -17,4 +17,4 @@ properties:
       self:
         type: string
         example:
-          href: https://api.checkout.com/events/evt_az5sblvku4ge3dwpztvyizgcau/notifications/ntf_az5sblvku4ge3dwpztvyizgcau
+          href: https://api.checkout.com/events/<EVENT_ID>/notifications/<EVENT_NOTIFICATION_ID>

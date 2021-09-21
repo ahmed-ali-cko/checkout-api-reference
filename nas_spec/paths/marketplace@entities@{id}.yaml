@@ -78,7 +78,7 @@
                           month: 06
                           year: 1995
                   instruments:
-                    - id: src_hmnkhxlshf3uhljow7zt7sf2cq
+                    - id: <SOURCE_ID>
                       label: Peter's Personal Account
                   _links:
                     self:
@@ -123,7 +123,7 @@
                         front: 'file_wxglze3wwywujg4nna5fb7ldli'
                         back: 'file_adglze3wwywujg4nna5fb7l1sg'
                   instruments:
-                    - id: src_hmnkhxlshf3uhljow7zt7sf2cq
+                    - id: <SOURCE_ID>
                       label: Peter's Personal Account
                   _links:
                     self:

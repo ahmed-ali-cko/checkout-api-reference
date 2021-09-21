@@ -24,9 +24,9 @@ properties:
           - $ref: '#/components/schemas/Link'
         description: The URI of the payment source
         example:
-          href: https://api.checkout.com/sources/src_y3oqhf46pyzuxjbcn2giaqnb44
+          href: https://api.checkout.com/sources/<SOURCE_ID>
     example:
       self:
-        href: https://api.checkout.com/sources/src_y3oqhf46pyzuxjbcn2giaqnb44
+        href: https://api.checkout.com/sources/<SOURCE_ID>
       'sepa:mandate':
-        href: https://api.checkout.com/sepa/mandates/src_y3oqhf46pyzuxjbcn2giaqnb44
+        href: https://api.checkout.com/sepa/mandates/<SOURCE_ID>

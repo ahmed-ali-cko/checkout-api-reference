@@ -29,11 +29,11 @@ properties:
         allOf:
           - $ref: '#/components/schemas/Link'
         example:
-          href: https://api.checkout.com/events/evt_az5sblvku4ge3dwpztvyizgcau/notifications/ntf_az5sblvku4ge3dwpztvyizgcau
+          href: https://api.checkout.com/events/<EVENT_ID>/notifications/<EVENT_NOTIFICATION_ID>
       retry:
         type: object
         description: A link to retry the notification to the configured webhook
         allOf:
           - $ref: '#/components/schemas/Link'
         example:
-          href: https://api.checkout.com/events/evt_az5sblvku4ge3dwpztvyizgcau/webhooks/wh_5nuzkt62ddxuho5rwsvt6pyesi/retry
+          href: https://api.checkout.com/events/<EVENT_ID>/webhooks/<WEBHOOK_ID>/retry

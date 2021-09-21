@@ -2,8 +2,8 @@ type: object
 description: The event data
 example:
   {
-    'id': 'pay_mbabizu24mvu3mela5njyhpit4',
-    'action_id': 'act_y3oqhf46pyzuxjbcn2giaqnb44',
+    'id': '<PAYMENT_ID>',
+    'action_id': '<ACTION_ID>',
     'amount': 6540,
     'currency': 'USD',
     'approved': true,
@@ -16,7 +16,7 @@ example:
     'source':
       {
         'type': 'card',
-        'id': 'src_nwd3m4in3hkuddfpjsaevunhdy',
+        'id': '<SOURCE_ID>',
         'billing_address':
           {
             'address_line1': 'Checkout.com',
@@ -28,7 +28,7 @@ example:
           },
         'phone': { 'country_code': '+1', 'number': '415 555 2671' },
       },
-    'customer': { 'id': 'cus_y3oqhf46pyzuxjbcn2giaqnb44', 'email': 'brucewayne@gmail.com', 'name': 'Bruce Wayne' },
+    'customer': { 'id': '<CUSTOMER_ID>', 'email': 'brucewayne@gmail.com', 'name': 'Bruce Wayne' },
     'processed_on': '2020-02-27T11:26:59Z',
     'reference': 'ORD-5023-4E89',
     'metadata': { 'coupon_code': 'NY2018', 'partner_id': 123989 },

@@ -10,7 +10,7 @@
       Completes a session by posting the the following request to the callback URL (only relevant for non hosted sessions):
       ```
       {
-         "session_id": "sid_llraltf4jlwu5dxdtprcv7ba5i",
+         "session_id": "<SESSION_ID>",
          "amount" : 6540,
          "currency": "USD",
          "status": "approved",

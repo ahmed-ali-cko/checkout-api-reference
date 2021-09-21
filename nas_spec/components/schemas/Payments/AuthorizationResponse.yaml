@@ -124,12 +124,12 @@ properties:
         description: A link to refund the payment, where applicable
     example:
       self:
-        href: 'https://api.checkout.com/payments/pay_y3oqhf46pyzuxjbcn2giaqnb44'
+        href: 'https://api.checkout.com/payments/<PAYMENT_ID>'
       actions:
-        href: 'https://api.checkout.com/payments/pay_y3oqhf46pyzuxjbcn2giaqnb44/actions'
+        href: 'https://api.checkout.com/payments/<PAYMENT_ID>/actions'
       authorize:
-        href: 'https://api.checkout.com/payments/pay_y3oqhf46pyzuxjbcn2giaqnb44/authorizations'
+        href: 'https://api.checkout.com/payments/<PAYMENT_ID>/authorizations'
       void:
-        href: 'https://api.checkout.com/payments/pay_y3oqhf46pyzuxjbcn2giaqnb44/voids'
+        href: 'https://api.checkout.com/payments/<PAYMENT_ID>/voids'
       capture:
-        href: 'https://api.checkout.com/payments/pay_y3oqhf46pyzuxjbcn2giaqnb44/capture'
+        href: 'https://api.checkout.com/payments/<PAYMENT_ID>/capture'

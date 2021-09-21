@@ -77,6 +77,6 @@ properties:
   #                   description: Workflow action results for this event
   #               example:
   #                 self:
-  #                   href: "https://api.checkout.com/events/evt_az5sblvku4ge3dwpztvyizgcau/actions/wfa_uzkxpffkvpiu5fe3h5ira7sqpa"
+  #                   href: "https://api.checkout.com/events/<EVENT_ID>/actions/wfa_uzkxpffkvpiu5fe3h5ira7sqpa"
   _links:
     $ref: '#/components/schemas/event-links'

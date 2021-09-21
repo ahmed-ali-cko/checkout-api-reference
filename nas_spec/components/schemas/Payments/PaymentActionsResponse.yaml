@@ -5,14 +5,14 @@ minItems: 1
 description: |
   The payment actions
 example:
-  - 'id': 'act_fd3h6evhpn3uxdoqbuu3lqnqbm'
+  - 'id': '<ACTION_ID>'
     'type': 'Refund'
     'processed_on': '2018-01-20T10:30:48Z'
     'amount': 1000
     'approved': true
     'response_code': '10000'
     'response_summary': 'Approved'
-  - 'id': 'act_gefycn3jcvuupboxfmqrhk2aym'
+  - 'id': '<ACTION_ID>'
     'type': 'Capture'
     'processed_on': '2018-01-17T10:30:48Z'
     'amount': 6540
@@ -24,7 +24,7 @@ example:
       'acquirer_transaction_id': '00745244079'
     'metadata':
       'shipping_ref': 'MQIBN2'
-  - 'id': 'act_y3oqhf46pyzuxjbcn2giaqnb44'
+  - 'id': '<ACTION_ID>'
     'type': 'Authorization'
     'processed_on': '2018-01-17T09:30:48Z'
     'amount': 6540

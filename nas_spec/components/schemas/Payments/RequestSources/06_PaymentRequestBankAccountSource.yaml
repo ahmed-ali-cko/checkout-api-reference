@@ -8,7 +8,7 @@ allOf:
       - country
     properties:
       payment_method:
-        description: The payment method
+        description: The payment method to be used in this transaction, e.g. "ach"
         type: string
         example: ach
 

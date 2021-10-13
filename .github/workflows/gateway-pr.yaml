@@ -90,7 +90,7 @@ jobs:
           rsync -a ../src_spec/nas_spec/ nas_spec/
           git add .
           git commit -m 'Publish new API Specification'
-          git push origin HEAD
+          git push -f origin HEAD
 
       - uses: actions/github-script@v4
         with:

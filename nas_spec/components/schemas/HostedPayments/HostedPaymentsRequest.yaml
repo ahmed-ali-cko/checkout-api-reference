@@ -118,7 +118,6 @@ properties:
           type: integer
           description: 'Minor units. Includes tax, excludes discounts. The exact format <a href="https://docs.checkout.com/docs/calculating-the-value" target="_blank">depends on the currency</a>'
           minimum: 0
-          maximum: 100000000
           example: 1000
   risk:
     $ref: '#/components/schemas/RiskRequest'
@@ -190,3 +189,10 @@ properties:
       Providing this field will automatically set `capture` to true.
     allOf:
       - $ref: '#/components/schemas/Timestamp'
+  processing_channel_id:
+    type: string
+    pattern: "^(pc)_(\\w{26})$"
+    description: The processing channel to be used for the payment
+    example: 'pc_q4dbxom5jbgudnjzjpz7j2z6uq'
+  marketplace:
+    $ref: '#/components/schemas/MarketplaceData'

@@ -39,6 +39,7 @@ properties:
       - low_value
       - secure_corporate_payment
       - trusted_listing
+      - transaction_risk_assessment
     description: Specifies an exemption reason so that the payment is not processed using 3D Secure authentication. Learn more about exemptions in our <a href="https://docs.checkout.com/four/payments/regulation-support/sca-compliance-guide#SCAcomplianceguide-PossibleSCAexemptionsexemptions" target="_blank">SCA compliance guide</a>
     example: 'low_value'
   status:
@@ -67,12 +68,13 @@ properties:
     description: 'Provides the challenge type in the case of the authentication has been challenged or not and how.'
   challenge_indicator:
     type: string
+    description: Indicates the preference for whether or not a 3DS challenge should be performed. The customer’s bank has the final say on whether or not the customer receives the challenge.
     enum:
       - no_preference
       - no_challenge_requested
       - challenge_requested
       - challenge_requested_mandate
-    description: 'Indicates a challenge in the case of the authentication.'
+    default: no_preference
   status_reason_code:
     type: string
     example: "01"

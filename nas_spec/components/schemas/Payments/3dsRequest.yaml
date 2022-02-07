@@ -41,3 +41,48 @@ properties:
       - trusted_listing
     description: Specifies an exemption reason so that the payment is not processed using 3D Secure authentication. Learn more about exemptions in our <a href="https://docs.checkout.com/four/payments/regulation-support/sca-compliance-guide#SCAcomplianceguide-PossibleSCAexemptionsexemptions" target="_blank">SCA compliance guide</a>
     example: 'low_value'
+  status:
+    type: string
+    example: "Y"
+    maxLength: 1
+    minLength: 1
+    description: "Indicates the transaction status of the Payer Authentication Response (PARes) message that is returned from the card Issuer's Access Control Server (ACS)"
+  authentication_date:
+    type: datetime
+    example: "2020-09-03T10:11:12Z"
+    description: "Authentication date and time. Format ISO-8601"
+    nullable: true
+  authentication_amount:
+    type: long
+    example: 200
+    minimum: 0
+    description: "Authentication amount"
+    nullable: true
+  flow_type:
+    type: string
+    enum:
+      - challenged
+      - frictionless
+      - frictionless_delegated
+    description: 'Provides the challenge type in the case of the authentication has been challenged or not and how.'
+  challenge_indicator:
+    type: string
+    enum:
+      - no_preference
+      - no_challenge_requested
+      - challenge_requested
+      - challenge_requested_mandate
+    description: 'Indicates a challenge in the case of the authentication.'
+  status_reason_code:
+    type: string
+    example: "01"
+    maxLength: 2
+    minLength: 2
+    description: "A code indicating the reason for the transaction status"
+  challenge_cancel_reason:
+    type: string
+    example: "01"
+    description: 'Indicates a cancel reason for a challenge in the case of authentication. Can be any number from 00 to 99, with 00 being specific ONLY to Cartes Bancaires.'
+  # TODO: add description
+  score:
+    type: string

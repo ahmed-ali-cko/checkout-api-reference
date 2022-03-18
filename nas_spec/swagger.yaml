@@ -39,6 +39,7 @@ info:
 
       | Date       | Description of change                                                         |
       | ---------- | ----------------------------------------------------------------------------- |
+      | 2022/03/08 | Added the `marketplaces.sub-entities` object to get payment response.         |
       | 2022/03/08 | Added the `marketplaces.sub-entities` object to capture request to support split payments. |
       | 2022/03/02 | Adds Transfers and Balances                                                   |
       | 2022/02/23 | Adds Hosted Payments Page and Payment Links                                   |

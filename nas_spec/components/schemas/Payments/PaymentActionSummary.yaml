@@ -25,3 +25,6 @@ properties:
     type: string
     description: The Gateway response summary
     example: 'Approved'
+  marketplace:
+    $ref: '#/components/schemas/MarketplaceActions'
+  
